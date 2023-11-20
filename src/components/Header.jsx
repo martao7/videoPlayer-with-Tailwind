@@ -1,159 +1,221 @@
 import React from "react";
 
-export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+export default function Header(props) {
   return (
-    <>
-      <nav
-        className={
-          (props.transparent
-            ? "top-0 absolute z-50 w-full"
-            : "relative shadow-lg bg-white shadow-lg") +
-          " flex flex-wrap items-center justify-between px-2 py-3 "
-        }
-      >
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className={
-                (props.transparent ? "text-white" : "text-gray-800") +
-                " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-              }
-              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-            >
-              Tailwind Starter Kit
-            </a>
-            <button
-              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i
-                className={
-                  (props.transparent ? "text-white" : "text-gray-800") +
-                  " fas fa-bars"
-                }
-              ></i>
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
-            }
-            id="example-navbar-warning"
+    <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3">
+      <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+          <a
+            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+            href="#pablo"
           >
-            <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className={
-                    (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/profile"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " far fa-file-alt text-lg leading-lg mr-2"
-                    }
-                  />{" "}
-                  Docs
-                </a>
-              </li>
-            </ul>
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">
-                <a
-                  className={
-                    (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-facebook text-lg leading-lg "
-                    }
-                  />
-                  <span className="lg:hidden inline-block ml-2">Share</span>
-                </a>
-              </li>
-
-              <li className="flex items-center">
-                <a
-                  className={
-                    (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-twitter text-lg leading-lg "
-                    }
-                  />
-                  <span className="lg:hidden inline-block ml-2">Tweet</span>
-                </a>
-              </li>
-
-              <li className="flex items-center">
-                <a
-                  className={
-                    (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600") +
-                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  }
-                  href="#pablo"
-                >
-                  <i
-                    className={
-                      (props.transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500") +
-                      " fab fa-github text-lg leading-lg "
-                    }
-                  />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
-                </a>
-              </li>
-
-              <li className="flex items-center">
-                <button
-                  className={
-                    (props.transparent
-                      ? "bg-white text-gray-800 active:bg-gray-100"
-                      : "bg-pink-500 text-white active:bg-pink-600") +
-                    " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                  }
-                  type="button"
-                  style={{ transition: "all .15s ease" }}
-                >
-                  <i className="fas fa-arrow-alt-circle-down"></i> Download
-                </button>
-              </li>
-            </ul>
-          </div>
+            Elephants Dream
+          </a>
+          <button
+            className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+          >
+            <span className="block relative w-6 h-px rounded-sm bg-white"></span>
+            <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
+            <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
+          </button>
         </div>
-      </nav>
-    </>
+        <div
+          className="lg:flex flex-grow items-center"
+          id="example-navbar-warning"
+        >
+          <ul className="flex flex-col lg:flex-row list-none ml-auto">
+            <li className="nav-item">
+              <a
+                className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                href="#pablo"
+              >
+                <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75" />
+                <span className="ml-2">Share</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                href="#pablo"
+              >
+                <i className="fab fa-twitter text-lg leading-lg text-white opacity-75" />
+                <span className="ml-2">Tweet</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                href="#pablo"
+              >
+                <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75" />
+                <span className="ml-2">Pin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
+
+// import React from "react";
+
+// export default function Header(props) {
+//   const [videoPlay, setVideoPlay] = React.useState(false);
+//   return (
+//     <>
+//       <nav
+//         className={
+//           (props.transparent
+//             ? "top-0 absolute z-50 w-full"
+//             : "relative shadow-lg bg-white shadow-lg") +
+//           " flex flex-wrap items-center justify-between px-2 py-3 "
+//         }
+//       >
+//         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+//           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+//             <a
+//               className={
+//                 (props.transparent ? "text-white" : "text-gray-800") +
+//                 " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+//               }
+//               href=".src/components/videoPlay.jsx"
+//             >
+//               Elephants Dream
+//             </a>
+//             <button
+//               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+//               type="button"
+//               onClick={() => setVideoPlay(!videoPlay)}
+//             >
+//               <i
+//                 className={
+//                   (props.transparent ? "text-white" : "text-gray-800") +
+//                   " fas fa-bars"
+//                 }
+//               ></i>
+//             </button>
+//           </div>
+//           <div
+//             className={
+//               "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
+//               (videoPlay ? " block rounded shadow-lg" : " hidden")
+//             }
+//             id="example-navbar-warning"
+//           >
+//             <ul className="flex flex-col lg:flex-row list-none mr-auto">
+//               <li className="flex items-center">
+//                 <a
+//                   className={
+//                     (props.transparent
+//                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+//                       : "text-gray-800 hover:text-gray-600") +
+//                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+//                   }
+//                   href=".src/components/videoPlay.jsx"
+//                 >
+//                   <i
+//                     className={
+//                       (props.transparent
+//                         ? "lg:text-gray-300 text-gray-500"
+//                         : "text-gray-500") +
+//                       " far fa-file-alt text-lg leading-lg mr-2"
+//                     }
+//                   />{" "}
+//                   About
+//                 </a>
+//               </li>
+//             </ul>
+//             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+//               <li className="flex items-center">
+//                 <a
+//                   className={
+//                     (props.transparent
+//                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+//                       : "text-gray-800 hover:text-gray-600") +
+//                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+//                   }
+//                   href="#pablo"
+//                 >
+//                   <i
+//                     className={
+//                       (props.transparent
+//                         ? "lg:text-gray-300 text-gray-500"
+//                         : "text-gray-500") +
+//                       " fab fa-facebook text-lg leading-lg "
+//                     }
+//                   />
+//                   <span className="lg:hidden inline-block ml-2">Share</span>
+//                 </a>
+//               </li>
+
+//               <li className="flex items-center">
+//                 <a
+//                   className={
+//                     (props.transparent
+//                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+//                       : "text-gray-800 hover:text-gray-600") +
+//                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+//                   }
+//                   href="#pablo"
+//                 >
+//                   <i
+//                     className={
+//                       (props.transparent
+//                         ? "lg:text-gray-300 text-gray-500"
+//                         : "text-gray-500") +
+//                       " fab fa-twitter text-lg leading-lg "
+//                     }
+//                   />
+//                   <span className="lg:hidden inline-block ml-2">Tweet</span>
+//                 </a>
+//               </li>
+
+//               <li className="flex items-center">
+//                 <a
+//                   className={
+//                     (props.transparents
+//                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+//                       : "text-gray-800 hover:text-gray-600") +
+//                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+//                   }
+//                   href="#pablo"
+//                 >
+//                   <i
+//                     className={
+//                       (props.transparent
+//                         ? "lg:text-gray-300 text-gray-500"
+//                         : "text-gray-500") +
+//                       " fab fa-github text-lg leading-lg "
+//                     }
+//                   />
+//                   <span className="lg:hidden inline-block ml-2">Star</span>
+//                 </a>
+//               </li>
+
+//               <li className="flex items-center">
+//                 <button
+//                   className={
+//                     (props.transparent
+//                       ? "bg-white text-gray-800 active:bg-gray-100"
+//                       : "bg-pink-500 text-white active:bg-pink-600") +
+//                     " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+//                   }
+//                   type="button"
+//                   style={{ transition: "all .15s ease" }}
+//                   href=".src/components/videoPlay.jsx"
+//                 >
+//                   <i className="fas fa-arrow-alt-circle-down"></i> Play
+//                 </button>
+//               </li>
+//             </ul>
+//           </div>
+//         </div>
+//       </nav>
+//     </>
+//   );
+// }
 
 // import { Fragment, useState } from "react";
 // import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
